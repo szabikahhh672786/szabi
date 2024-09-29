@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff7e8c, #c1c3ff);
+    transition: background 0.5s;
+}
+
+body.dark-theme {
+    background-color: #121212; /* Darker background for better contrast */
+    color: #e0e0e0; /* Light text color for better readability */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    margin: 10px 0;
+    padding: 8px;
+    width: 250px;
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ff4c4c; /* Border color */
+}
+
+.heart-icon, .settings {
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.settings-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.settings-menu.show {
+    display: block;
+}
+
+.main-title {
+    text-align: center;
+    border: 2px solid red; 
+    padding: 10px;
+    border-radius: 8px;
+    color: red; 
+}
+
+body.dark-theme .main-title {
+    color: #ffb3b3; /* Lighter color for the main title */
+    border-color: #ffb3b3; /* Match border color to the title */
+}
+
+nav {
+    background: linear-gradient(135deg, #ff4c4c, #ff88a5);
+    padding: 10px;
+}
+
+body.dark-theme nav {
+    background: linear-gradient(135deg, #333333, #444444); /* Darker navigation background */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark-theme nav ul li a {
+    color: #e0e0e0; /* Lighter link color */
+}
+
+nav ul li a:hover {
+    text-shadow: 0 0 10px #ff7e8c, 0 0 20px #ff4c4c;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin: 20px;
+    display: none;
+}
+
+body.dark-theme .welcome {
+    background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark background */
+}
+
+.welcome .monogram {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff4c4c; 
+}
+
+.main-message {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.main-message h1 {
+    font-size: 2.5em;
+}
+
+.main-message p {
+    font-size: 1.5em;
+}
+
+.heart {
+    width: 100px;
+    margin-top: 20px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme section {
+    background-color: #1e1e1e; /* Darker section background */
+}
+
+h2 {
+    color: #333;
+}
+
+body.dark-theme h2 {
+    color: #ffb3b3; /* Lighter heading color */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.small-image {
+    width: 80px; 
+    height: auto; 
+    border: 2px solid #ff4c4c; 
+    transition: transform 0.3s; 
+}
+
+.small-image:hover {
+    transform: scale(1.1); 
+}
+
+.message-container {
+    background-color: #ffcccc; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s; 
+}
+
+body.dark-theme .message-container {
+    background-color: #333333; /* Darker background for messages */
+    color: #e0e0e0; /* Light text color */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hearts-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.heart-animation {
+    position: absolute;
+    font-size: 24px;
+    animation: rise 5s forwards;
+}
+
+@keyframes rise {
+    0% {
+        bottom: 0;
+        opacity: 1;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 0;
+    }
+}

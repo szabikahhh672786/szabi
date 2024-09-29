@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Örök Emlékek</title>
+</head>
+
+<body>
+    <header>
+        <div class="left-header">
+            <div class="heart-icon" onclick="toggleHearts()">❤️</div>
+            <input type="text" id="search" placeholder="Keresés..." oninput="searchContent()">
+        </div>
+        <h1 class="main-title">Örök Emlékek</h1>
+        <div class="settings" onclick="toggleSettings()">⚙️</div>
+        <div id="settings-menu" class="settings-menu">
+            <label for="theme-switch">Sötét téma:</label>
+            <input type="checkbox" id="theme-switch" onchange="toggleTheme()">
+        </div>
+    </header>
+
+    <div id="welcome-message" class="welcome">
+        <p>Szeretlek Téged! <span class="monogram">d.a</span></p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#emlekek">Jó Emlékek</a></li>
+            <li><a href="#pillanatok">Közös Pillanatok</a></li>
+            <li><a href="#szeretet">Mennyire Szeretlek</a></li>
+            <li><a href="#uzenetem">Üzenetem</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-message" id="szeretet">
+        <h1>Mennyire Szeretlek</h1>
+        <p>Te vagy a legfontosabb az életemben!</p>
+        <img src="heart.png" alt="Szív" class="heart">
+    </div>
+
+    <section id="emlekek">
+        <h2>Jó Emlékek</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="1.jpg" alt="Emlék 1" class="responsive small-image">
+                <p>Emlék 1 leírása...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpg" alt="Emlék 2" class="responsive small-image">
+                <p>Emlék 2 leírása...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pillanatok">
+        <h2>Közös Pillanatok</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="3.jpg" alt="Pillanat 1" class="responsive small-image">
+                <p>Pillanat 1 leírása...</p>
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpg" alt="Pillanat 2" class="responsive small-image">
+                <p>Pillanat 2 leírása...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="uzenetem">
+        <h2>Üzenetem</h2>
+        <div class="message-container">
+            <p class="animated-message">
+                nya szívem akkoj el jött az ideje hogy ezt le kell írjam neked nagyon de nagyon szépen köszönöm hogy it
+                vagy nekem 1 éve és még mindig meletem vagy remélem szívem te leszel a gyerekeim anyja és te leszel a
+                feleségem szívem nyem tudom hogyan koszonojem meg ezt mind neked amit eddig értem tetél szívem ezért így
+                próbálom rengeteg mindenem keresztül mentünk voltak nagyobb veszekedéseink de ahogyan el látom szívem
+                isten egymasnaka teremtett minket soha az életemben nem fogom fel adni bármi is legyen az szívem érted
+                meg fogok tenni akármit meg ígérem szívem rengeteg jó és rosz emléket magába foglal ez az 1 év szívem 1
+                éve hűségesen állok hozzád és főzök is kicsim sohasem fogja meg tudni senki az életben hogx én mit érzek
+                irántad kicsim veszekedtunk sietünk nevetünk egyut nincs mi szégyeljunk egymás elot ha visza emlékszel
+                szívem kapcsolatunk elején nagyon is félénken voltunk egymás elot szívem de fel szabadultak és egymásnak
+                adtunk magunkat ha úgy döntenek hogy nem én vagyok szavaira az aki te számomra vagy szívem légyszíves
+                szólj kicsim nagyon féltelek a nagy világ elől tudom szívem hogy nyem kéne enyire de pedig igen mivel 1
+                van belőled kicsim és az az enyém senki mássé és nem szeretném el veszíteni néha teszünk rosszakat és
+                tetunk is követünk el hibákat de a hibáktól az ember csak erősebb lesz belőle és tanul belőle szívem
+                éreztük már egymás hiányát félelmet jot roszat már mindent kicsim nagyon d3 nagyon szépen köszönöm hogy
+                it vagy nekem rám mindig is szamithastsz bármi is legyen az szívem nekem a mosolyod világítja meg a
+                napjaimat szívem és az erintésed gyogyitsa a lelkemet minden perc amit veled tolthetek életem legnagyobb
+                ajándéka olyan sok dolgot tanultam ebbe az évben tőled szíven nem csak az hogy mit jelent valaki
+                szeretni hanem azt id kicsim mien szeretve lenni enyire érzékeny vagyok kicsim hogx ezen éppen most én
+                sírok lehet te is fogsz pedig nyekem nyem kéne szívem köszönöm hogx mindig it vagy melrtem szívem amióta
+                be léptél az életemben el sem tudom gondolni mien lehetett volna nélküled szívem te vagy álmaim nője
+                ahww isztenem ilyet senki nem érez csak mi kicsim szeretnék egy igaz kapcsolatot és nagyon boldogan él
+                lenni tovanra is és remélem szívem a következő év amit egyut töltünk nem lesz benne enyi veszekedés es
+                remélem kicsim ugyan így érzel irántam az tudod mien jonerzes nem titokban egyut lenni és nem titokban
+                csókolózni hanem titokban fogdosni egymást amikor csak 1 ujjal hozzád is érek le nem tudom irno olyan
+                érzés és amikoj sírsz szakad meg a szívem kicsim erre tegnap volt a példa szívem egyut vagyunk 4
+                evszakja 12 hónapja 52 hete 365 napja 8760 órája szívem remélem sosem veszitelek el sohasem foglak el
+                engedni szívem történjen bármi is en akkor is a tiéd maradok egy életre szívem soha életemben nem mertem
+                volna ilyen nagyot álmodni mitn amien te vagy szívem meg ígérem neked hogyha ot az idő hogx ősze
+                költözünk kicsim es már elég idősek vagyunk meg van mindenünk szívem hogy jön a pici ígérem mindent meg
+                teszek azért ugy ahogyan most érted csak hogy nektek legyen a legjobb lehet nem nézek ki a legjobban nem
+                vagyok a legokosabb de el fogadtal igy ahogyan vagyok és én is szívem köszönöm hogy az enyém vagy amikor
+                bárki csak nem hagy békén szívem meg tudnak szavakal is ölni de az a nézés amikoj valami nadon jó neked
+                szívem ahwwe az a kedvencem amikoj olyan cukin nézel vagy éppen akkoj felfelé nézzél szívem ahww
+                köszönöm hogy it vagy számomra arra emlékszel szívem mikoj vasárnap mindig bában találkoztunk +4 ora
+                hoszat akkor nagyon ritkán veszekedunk szívem mivel az csak a mi időnk volt volt olyan fociztunk faztunk
+                esset az esso is ahww és arra emlékszel szívem mikoj tiszta ver volt a kezem ahww azt is nyekem adtad
+                soha az életben nem fogom el felejteni kicsim volt olyan is mikoj 1 iran volt de be szoktél Miskolcra
+                szívem én pedig bujkáltam a buszon és amikor el mentünk mekizni majdnem le kértük a buszt a villamost
+                f3l szaltunk a buszra ettünk szívem és papin bujkaltunk de olyan kis huncut vagy amikoj tudom hogx
+                szokásost akkarsz mindig mondod hogx fazzol és ez nyáron nadon jó célt szívem 45 fokban be takaroztal
+                szivrm ahww és remélem teljesulhet a jövönk kicsim és az is hogy az én kis ápoló nöm lesz ahww arra
+                emlékszel szívem mikoj ki mentünk a tóhoz bele mentünk ot is voltunk úgy egyut mint a mi utába ahww
+                szívem nem hagytam volna hogy még fulladj szívem és arra kicsim mikoj Miskolcon fagyiztunk és magamra
+                eset az egész és arra kicsim amikoj be mentünk a boldba és haza jöttünk filmezni haww az is mien jó volt
+                kicsim ha másnak baja van veled akkor nem csak veled hanem velem is baja lesz szívem és amikoj meg
+                jöttek a karkotok nyakláncok hogy örültünk neki szívem ígérem amitn lesz a kártyámon pénz rendelünk de
+                most többet kicsim és arra emlékszel szívem mikoj bában először egyit voltunk a nélkül ahww menxire
+                élveztük kicsim mostmar nyem is tudom mien lehet azzal kicsim volt olyan amikoj a jatszon voltunk
+                anyudek Kornél batyáeknal szívem és 18:56 volt nagyon de nagyon erősen fújt a szél szívem sötét volt ez
+                tavasz elején lehetet kicsim el mentünk leszel szívem és akkoj volt mentolos gumi emlékszel szívem
+                menixre élveztük főleg a tüskés szíven azt nagyon is de nagyon is elvezted szívem az az érzés mikoj meg
+                csokolsz szívem át olelsz vagy csak halalhtom a hangod láthatók rólad egy képet azonnali erzelmekel
+                tölthet el szívem köszönöm ezt az 1 évet kicsim tud kurvara de kurvara szeretlek szívem örökre it leszek
+                neked kicsim remélem mostmar ez az év meg ennél is jobb lesz szívem köszönöm qhww köszönöm istenem higx
+                enyém vagy amedig ezt írtam végig ment egy 50 perces zene szíven alig várom hogy lássalak kicsim amikoj
+                ezt olvasod ma délután vagy este mert nyem akarom holnapra hagyni szívem mivel én korán kelek és nyem
+                lesz ugx időn el olvasni remélem el sirod nyekem magadat rajta szívem köszönöm hogy it vagy nyekem
+                hercegnöm szeretlek de kurvara 😭🥺❤️❤️😭🥺
+            </p>
+        </div>
+    </section>
+
+    <div class="hearts-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
